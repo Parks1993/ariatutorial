@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>ARIA Tutorial Example</title>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="myscriptS.js"></script>
+		<link rel="stylesheet" type="text/css" href="styleS.css">
+	</head>
+	<body>
+
+
+		<form>
+			<label for="name">Name: </label>
+			<input type="text" id="name" aria-required="true"/>
+			<label for="email">Email: </label>
+			<input type="text" id="email"/>
+			<label for="birthdate">Birthdate: </label>
+			<input type="text" aria-invalid="false" id="birthdate">
+			<p class="hidden" role="alert"><em>Invalid Entry</p></em>
+			<br/>
+ 			<table>
+				<caption> Pick a date! </caption>
+				<tr>
+					<th></th>
+					<th scope="col" id="mon">Monday</th>
+					<th scope="col" id="tues">Tuesday</th>
+					<th scope="col" id="wed">Wednesday</th>
+				</tr>
+				<tr>
+					<th scope="row" id="1pm">1:00pm</th>
+					<th><input aria-label="monday 1pm" type="checkbox" id="mon1"></th>
+					<th><input type="checkbox" id="mon2"></th>
+					<th><input type="checkbox" id="mon3"></th>	
+				</tr>
+				<tr>
+					<th scope="row">2:00pm</th>
+					<th><input type="checkbox" id="tue1"></th>
+					<th><input type="checkbox" id="tue2"></th>
+					<th><input type="checkbox" id="tue3"></th>	
+				</tr>
+				<tr>
+					<th scope="row">3:00pm</th>
+					<th><input type="checkbox" id="mon1"></th>
+					<th><input type="checkbox" id="mon2"></th>
+					<th><input type="checkbox" id="mon3"></th>	
+				</tr>
+			</table>
+			<br/>
+			<button type="submit" id="submit">Submit</button>
+		</form>
+	</body>
+</html>
