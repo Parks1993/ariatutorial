@@ -10,11 +10,11 @@
 
 
 		<form>
-			<label>Name: </label>
-			<input type="text" id="name"/>
-			<label>Email: </label>
+			<label for = "name">Name: </label>
+			<input type="text" id="name" aria-required="true"/>
+			<label for = "email">Email: </label>
 			<input type="text" id="email"/>
-			<label>Birthdate: </label>
+			<label for = birthdate>Birthdate: </label>
 			<input type="text" id="birthdate">
 			<p class="hidden"><em>Invalid Entry</p></em>
 			<br/>
@@ -28,7 +28,7 @@
 				</tr>
 				<tr>
 					<th scope="row" id="1pm">1:00pm</th>
-					<th><input type="checkbox" id="mon1"></th>
+					<th><input type="checkbox" aria-label="Monday at 1pm" id="mon1"></th>
 					<th><input type="checkbox" id="mon2"></th>
 					<th><input type="checkbox" id="mon3"></th>	
 				</tr>
